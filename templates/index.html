@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CineRecommender</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='bg.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">CineRecommender</h1>
+        <form action="/recommend" method="POST">
+            <div class="mb-3">
+                <label for="genre" class="form-label">Select Genre:</label>
+                <select id="genre" name="genre" class="form-select">
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <!-- Add more genre options as needed -->
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="year_range" class="form-label">Select Year Range:</label>
+                <select id="year_range" name="year_range" class="form-select">
+                    <option value="1990-2000">1990-2000</option>
+                    <option value="2000-2010">2000-2010</option>
+                    <option value="2010-2020">2010-2020</option>
+                    <!-- Add more year range options as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Recommend Movies</button>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+
+h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    color: black;
+}
+
+p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+
+/* Store this code in 'style.css' file inside the 'static' folder */
+
+body {
+    background-image: url("/static/tic.jpg"); /* Path to the image file */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .header {
+    padding: 5px 120px;
+    width: 150px;
+    height: 70px;
+    background-color: #8B4513; /* Change to brown color */
+    opacity: 0.7; /* Set opacity for the header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  }
+  
+  .border {
+    padding: 80px 50px;
+    width: 400px;
+    height: 450px;
+    border: 1px solid #8B4513; /* Change to brown color */
+    border-radius: 0px;
+    background-color: rgba(210, 180, 140, 0.7); /* Change to a translucent brown color */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  }
+  
+  .btn {
+    padding: 10px 40px;
+    background-color: #8B4513; /* Change to brown color */
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+    opacity: 0.9; /* Set opacity for the button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  }
+  
+  .textbox {
+    padding: 10px 40px;
+    background-color: #8B4513; /* Change to brown color */
+    color: #FFFFFF; /* Change text color to white */
+    border-radius: 10px;
+    opacity: 0.9; /* Set opacity for the text box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  }
+  
+  ::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  
+  .word {
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  
+  .bottom {
+    color: #8B4513; /* Change to brown color */
+    font-style: oblique;
+    font-weight: bold;
+  }
+  
