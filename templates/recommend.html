@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Recommended Movies</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='rbg.jpg') }}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    {% if films %}
+        <ul>
+            {% for film, details in zip(films, film_details) %}
+                <li>
+                    <h2>{{ film }}</h2>
+                    <p>Title: {{ details['title'] }}</p>
+                    <p>Year: {{ details['year'] }}</p>
+                    <p>Genres: {{ ", ".join(details['genres']) }}</p>
+                    <p>Plot: {{ details['plot'][0] }}</p>
+                    <p>Rating: {{ details['rating'] }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No movies found.</p>
+    {% endif %}
+</body>
+</html> 
