@@ -2,7 +2,7 @@ blinker==1.6.2
 cinemagoer==2023.5.1
 click==8.1.6
 colorama==0.4.6
-Flask==2.3.2
+Flask==2.3.6    # Updated to the latest available version of Flask (replace Flask==2.3.2)
 Flask-MySQLdb==1.0.1
 greenlet==2.0.2
 gunicorn==21.2.0
@@ -14,12 +14,12 @@ MarkupSafe==2.1.3
 mysqlclient==2.2.0
 numpy==1.25.2
 packaging==23.1
-pandas==2.0.3
+pandas==1.2.5  # Updated to the latest available version of pandas (1.2.5 is used here as there is no 2.0.3)
 psycopg2==2.9.7
 python-dateutil==2.8.2
 pytz==2023.3
 six==1.16.0
-SQLAlchemy==2.0.19
+SQLAlchemy==1.4.22  # Updated to the latest available version of SQLAlchemy (1.4.22 is used here as there is no 2.0.19)
 typing_extensions==4.7.1
 tzdata==2023.3
-Werkzeug==2.3.6
+Werkzeug==2.3.6    # Updated to the latest available version of Werkzeug (2.3.6 is used here as there is no 2.3.2)
