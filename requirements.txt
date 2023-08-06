@@ -1,7 +1,7 @@
 cinemagoer==2023.5.1
 click==8.1.6
 colorama==0.4.6
-Flask==2.3.6  # Use the latest available version of Flask (remove Flask==2.3.2)
+Flask== 2.2.5  # Use the latest available version of Flask (remove Flask==2.3.2)
 Flask-MySQLdb==1.0.1
 greenlet==2.0.2
 gunicorn==21.2.0
